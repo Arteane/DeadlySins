@@ -1,0 +1,154 @@
+body{
+    background-color: black;
+}
+/*les typos*/
+@font-face {
+    font-family: "caseopia" ;
+    src: url(./Caseopia\ Demo.otf);
+    }
+
+@font-face {
+      font-family: "roc";
+      src: url(./rocgroteskwide-extralight.otf);
+    }    
+/*Header*/
+body {
+    margin: 0;
+    font-family: "caseopia";
+  }
+  
+  header {
+    background-color: #000000ba;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20pt;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 70px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:solid;
+    color: #ffe895 ;
+  }
+  .navbar{
+    position: sticky;
+    top: 0;
+  }
+/*La gallerie et ses paramètres*/
+.gallery{
+  display: inline-block;
+  border: 1px solid hsl(0, 0%, 60%);
+  margin: 5px;
+  width:400px;
+  margin-bottom: 30px;
+}
+.gallery .desc{
+  padding:10px;
+  text-align:center;
+  color: #fff;
+}
+.gallery:hover{
+  border:1px solid hsla(45, 94%, 49%, 0.762);
+}
+.gallery img{
+  width: 100%;
+  height:auto;
+}
+
+
+/*footer*/
+.mainfooter{
+  background-color: #36090963;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-family: "roc-grotesk",sans-serif;
+  font-style: normal;
+}
+
+.container a {
+  color: white;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-device-width:450px) {
+
+  /*Header bonzoir*/
+  header {
+    padding: 20px 0;
+    font-size: 8pt;
+    z-index: 100;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    justify-content:center;
+    margin-right: 30px;
+  }
+  
+  .navbar{
+    position: sticky;
+    top: 20px;
+  }
+ /*Fin du Header*/
+
+/*Galerie règles*/
+ .gallery{
+  display: inline-block;
+  border: 1px solid hsl(0, 0%, 60%);
+  margin: 5px;
+  width:150px;
+  margin-bottom: 30px;
+}
+.gallery .desc{
+  padding:6px;
+  text-align:center;
+  color: #fff;
+}
+.gallery:hover{
+  border:1px solid hsla(45, 94%, 49%, 0.762);
+}
+.gallery img{
+  width: 100%;
+  height:auto;
+}
+
+
+
+  /*footer*/
+  .mainfooter{
+    font-size: 4px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  /*fin de footer*/
+  }

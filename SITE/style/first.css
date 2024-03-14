@@ -1,0 +1,142 @@
+/*L'introduction au monde hehe*/
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/*les typos de la pages*/
+@font-face {
+    font-family: "caseopia" ;
+    src: url(./Caseopia\ Demo.otf);
+}
+
+
+/*Header bonzoir*/
+body {
+  margin: 0;
+  font-family: "caseopia";
+}
+
+header {
+  background-color: #000000ba;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 20pt;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 70px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration:solid;
+  color: #ffe895 ;
+}
+.navbar{/*c'est le pourquoi du comment ca reste en haut et bim*/
+  position: sticky;
+  top: 0;
+}
+/*les images nous voilà*/
+  .mocktail {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+.mocktail:hover {
+  filter:brightness(130%);
+  transition: filter 0.3s ease;
+}
+
+/*les textes qui vont avec*/
+  .p {
+    font-family: "caseopia";
+    font-size: 20pt;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+/*footer*/
+.mainfooter{
+  background-color: #36090963;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-family: "roc-grotesk",sans-serif;
+  font-style: normal;
+}
+.container a {
+  color: white;
+}
+
+/*Responsive téléphone*/
+@media only screen and (max-device-width : 450px){
+
+/*Header bonzoir*/
+header {
+  padding: 20px 0;
+  font-size: 8pt;
+  z-index: 100;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  justify-content:center;
+  margin-right: 30px;
+}
+
+.navbar{
+  position: sticky;
+  top: 20px;
+}
+
+/*images des mocktails*/
+  .mocktail {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+/*texte descriptif*/
+.p{
+  font-size: 8pt;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+  /*footer*/
+.mainfooter{
+  font-size: 4px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+/*fin de footer*/
+}

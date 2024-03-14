@@ -1,0 +1,273 @@
+/*fond de la page*/
+body{
+    background-color: black;
+}
+
+/*Les typos*/
+@font-face {
+    font-family: "caseopia" ;
+    src: url(./Caseopia\ Demo.otf);
+    }
+
+/*image règles*/
+    .mocktail {
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+/*header*/
+
+body {
+    margin: 0;
+    font-family: "caseopia";
+  }
+  
+  header {
+    background-color: #000000ba;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20pt;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 70px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:solid;
+    color: #ffe895 ;
+  }
+  .navbar{
+    position: sticky;
+    top: 0;
+  }
+/*fin du header*/
+
+/*le blabla ne juge pas mes commentaires*/
+
+.titre{
+font-family: "caseopia";
+font-size: 25pt;
+color: #fff;
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 50px;
+margin-bottom: 0px;
+}
+
+.listing{/*pourquoi j'ai choisi ces ingrédients*/
+  font-family: "roc-grotesk", sans-serif;
+font-size: 13pt;
+font-style: normal;
+color: #fff;
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: justify;
+line-height:20px;
+}
+
+.warning{/*petit truc drôle*/
+    font-family: "roc-grotesk",sans-serif;
+    font-size: 16pt;
+    font-style:normal;
+        color: red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+    .blabla{/*l'histoire de la légende que je raconte*/
+  font-family: "roc-grotesk", sans-serif;
+font-size: 15pt;
+font-style: normal;
+color: #fff;
+text-align:inherit;
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 30px;
+margin-bottom: 50px;
+line-height: 20pt;
+}
+
+/*partie culture générale hehe*/
+.tableau {
+  display: flex;
+  align-items: flex-start;
+}
+
+    .image {
+  width: 500px; 
+  height: auto;
+  margin-right: -50px;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  }
+
+    .text {
+  font-size: 20px;
+  margin-right: 150px;
+  text-align: justify;
+  font-family: "roc-grotesk", sans-serif;
+  font-style: normal;
+  color: #fff;
+  }
+  
+/*footer des mocktails*/
+.footer {
+    background-color:transparent; 
+    padding: 20px;
+}
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+    .footer-image {
+      width: 100px;
+      height: auto;
+}
+/*fin de la page*/
+
+@media only screen and (max-device-width:450px){
+  header {
+    padding: 20px 0;
+    font-size: 8pt;
+    z-index: 100;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    justify-content:center;
+    margin-right: 30px;
+  }
+  
+  .navbar{
+    position: sticky;
+    top: 20px;
+  }
+  
+  
+  
+  /*Image Règles*/
+  .mocktail {
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+  
+  /*Titres */
+  .titre{
+    font-size: 13pt;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    }
+  
+    .warning{/*petit truc drôle*/
+      font-family: "roc-grotesk",sans-serif;
+      font-size: 10pt;
+      font-style:normal;
+          color: red;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px;
+  
+  }
+  /*Listing des ingrédients*/
+  .listing{
+  
+  font-size: 6pt;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height:15px;
+  }
+  
+  /*Histoire blablablaaaa*/
+  .blabla{
+  font-size: 6pt;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 15pt;
+  }
+  
+  /*partie culture générale hehe*/
+  .tableau {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+      .image {
+    width: 250px; 
+    height: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    }
+  
+      .text {
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: justify;
+    color: #fff;
+    font-family: "roc-grotesk", sans-serif;
+    font-style: normal;
+    font-size: 1pt;
+    }
+  
+    .footer {
+      background-color:transparent; 
+      padding: 20px;
+  }
+  
+      .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+  
+      .footer-image {
+        width: 50px;
+        height: auto;
+  }
+
+}
+

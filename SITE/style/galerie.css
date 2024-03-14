@@ -1,0 +1,175 @@
+body{
+    background-color: black;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+/*font*/
+
+    @font-face {
+        font-family: "caseopia" ;
+        src: url(./Caseopia\ Demo.otf);
+        }
+    
+/*Header bonzoir*/
+body {
+    margin: 0;
+    font-family: "caseopia";
+  }
+  
+  header {
+    background-color: #000000ba;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20pt;
+    z-index: 100;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 70px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:solid;
+    color: #ffe895 ;
+  }
+  .navbar{/*c'est le pourquoi du comment ca reste en haut et bim*/
+    position: sticky;
+    top: 0;
+  }
+/*Les titres*/
+.titre{
+    font-family: "caseopia";
+    font-size: 30pt;
+    color:#fff;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+/*présentation des salles*/
+.gallery{
+    display: inline-flex;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 5px;
+    width:250px;
+    margin-bottom: 30px;
+  }
+
+  .gallery:hover{
+    border:1px solid hsla(346, 94%, 49%, 0.762);
+    transform: scale(1.3);
+		background: #ff800a;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+        transition: 0.4s;
+  }
+  .gallery img{
+    width: 100%;
+    height:auto;
+  }
+  .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+/*footer*/
+.mainfooter{
+  background-color: #36090963;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-family: "roc-grotesk",sans-serif;
+  font-style: normal;
+}
+.container a {
+  color: white;
+}
+/*fin de page*/
+
+/*Média téléphone responsive*/
+@media only screen and (max-device-width:450px) {
+
+  /*Header bonzoir*/
+  header {
+    padding: 20px 0;
+    font-size: 8pt;
+    z-index: 100;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    justify-content:center;
+    margin-right: 30px;
+  }
+  
+  .navbar{
+    position: sticky;
+    top: 20px;
+  }
+ /*Fin du Header*/
+
+
+/*Titres*/
+.titre{
+  font-family: "caseopia";
+  font-size: 15pt;
+  color:#fff;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+/*Galerie règles*/
+ .gallery{
+  display: inline-flex;
+  border: 1px solid hsl(0, 0%, 60%);
+  margin: 5px;
+  width:150px;
+  margin-bottom: 30px;
+}
+.gallery .desc{
+  padding:6px;
+  text-align:center;
+  color: #fff;
+}
+.gallery:hover{
+  border:1px solid hsla(45, 94%, 49%, 0.762);
+}
+.gallery img{
+  width: 100%;
+  height:auto;
+}
+
+
+
+  /*footer*/
+  .mainfooter{
+    font-size: 4px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  /*fin de footer*/
+  }
